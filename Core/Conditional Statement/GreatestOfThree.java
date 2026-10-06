@@ -13,7 +13,7 @@ class GreatestOfThree
 
         if(a>=b && a>=c)  
         {
-         System.out.print(a+" is Greatest");           
+        System.out.print(a+" is Greatest");           
         }  
             else if(b>=c && b>=a)
             {                         
