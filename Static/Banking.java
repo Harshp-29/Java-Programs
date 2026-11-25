@@ -2,16 +2,14 @@ class Banking
 {
     static double balance;
     static long accno;
-    static int pin;
+    static int pin
     static String accountName;
     static boolean flag;
 
     public static void main(String[] args)
     {
         createAccount("Raju", 98765432101L, 1234);
-
         deposit(98765432101L, 1234, 4000);
-
         withdraw(98765432101L, 1234, 2000.0);
     }
 
@@ -22,7 +20,6 @@ class Banking
             accountName = name;
             Banking.accno = accno;
             Banking.pin = pin;
-
             System.out.println("Account Created!");
 
             flag = true;
@@ -40,7 +37,6 @@ class Banking
             if (amt > 0 && balance - amt > 2000)
             {
                 balance = balance - amt;
-
                 System.out.println("Amount debited!");
                 System.out.println("Your balance is: Rs." + balance);
             }
@@ -61,8 +57,7 @@ class Banking
         {
             if (amt > 0)
             {
-                balance = balance + amt;
-
+                balance = balance + amt; 
                 System.out.println("Amount credited!");
                 System.out.println("Your balance is: Rs." + balance);
             }
